@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — CBC Learning Ecosystem</title>
+<meta name="description" content="CBC Learning Ecosystem Privacy Policy. How we collect, use, and protect your personal data under the Kenya Data Protection Act 2019.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --navy:   #1B3A6B;
+  --navy-d: #0F2347;
+  --gold:   #E8C840;
+  --teal:   #028090;
+  --white:  #FFFFFF;
+  --off:    #F7F9FD;
+  --text:   #1A202C;
+  --muted:  #64748B;
+  --border: #E2E8F0;
+  --light:  #EEF3FA;
+  --red:    #C53030;
+  --green:  #276749;
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Outfit', sans-serif; color: var(--text); background: var(--white); line-height: 1.7; }
+a { color: var(--teal); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* NAV */
+nav {
+  background: var(--navy-d);
+  padding: 0 32px; height: 64px;
+  display: flex; align-items: center; justify-content: space-between;
+  position: sticky; top: 0; z-index: 100;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+}
+.nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 700; color: var(--gold); }
+.nav-back { font-size: 14px; color: rgba(255,255,255,0.6); display: flex; align-items: center; gap: 6px; transition: color 0.2s; }
+.nav-back:hover { color: var(--gold); text-decoration: none; }
+
+/* HERO */
+.policy-hero {
+  background: var(--navy);
+  padding: 64px 32px 56px;
+  position: relative; overflow: hidden;
+}
+.policy-hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 60% 100% at 80% 50%, rgba(2,128,144,0.18) 0%, transparent 60%);
+}
+.policy-hero-inner { max-width: 860px; margin: 0 auto; position: relative; z-index: 1; }
+.policy-eyebrow {
+  font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 16px; display: flex; align-items: center; gap: 8px;
+}
+.policy-eyebrow::before { content: ''; width: 24px; height: 1.5px; background: var(--gold); }
+.policy-title { font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 700; color: var(--white); margin-bottom: 16px; line-height: 1.1; }
+.policy-meta { font-size: 14px; color: rgba(255,255,255,0.5); }
+.policy-meta span { color: rgba(255,255,255,0.7); font-weight: 500; }
+
+/* LAYOUT */
+.policy-body { max-width: 860px; margin: 0 auto; padding: 64px 32px 100px; }
+
+/* TOC */
+.toc {
+  background: var(--off); border: 1px solid var(--border);
+  border-radius: 12px; padding: 28px 32px; margin-bottom: 56px;
+}
+.toc-title { font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--navy); margin-bottom: 16px; }
+.toc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 32px; }
+.toc-item { font-size: 14px; }
+.toc-item a { color: var(--teal); font-weight: 500; }
+
+/* COMPLIANCE BANNER */
+.compliance-banner {
+  background: var(--light); border-left: 4px solid var(--navy);
+  border-radius: 0 8px 8px 0; padding: 20px 24px; margin-bottom: 48px;
+  display: flex; gap: 16px; align-items: flex-start;
+}
+.compliance-banner-icon { font-size: 24px; flex-shrink: 0; margin-top: 2px; }
+.compliance-banner-text h4 { font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+.compliance-banner-text p { font-size: 14px; color: var(--muted); line-height: 1.6; }
+
+/* SECTIONS */
+.policy-section { margin-bottom: 52px; }
+.policy-section h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px; font-weight: 700; color: var(--navy);
+  margin-bottom: 20px; padding-bottom: 12px;
+  border-bottom: 2px solid var(--border);
+  scroll-margin-top: 80px;
+}
+.policy-section h3 { font-size: 17px; font-weight: 700; color: var(--navy); margin: 24px 0 10px; }
+.policy-section p { font-size: 15px; line-height: 1.75; color: var(--text); margin-bottom: 14px; }
+.policy-section ul, .policy-section ol { margin: 12px 0 16px 24px; }
+.policy-section li { font-size: 15px; line-height: 1.7; color: var(--text); margin-bottom: 6px; }
+.policy-section li strong { color: var(--navy); }
+
+/* DATA TABLE */
+.data-table { width: 100%; border-collapse: collapse; margin: 20px 0 28px; font-size: 14px; }
+.data-table th {
+  background: var(--navy); color: var(--white);
+  padding: 12px 14px; text-align: left; font-size: 13px; font-weight: 600;
+}
+.data-table td { padding: 11px 14px; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.6; }
+.data-table tr:nth-child(even) td { background: var(--off); }
+.data-table tr:hover td { background: var(--light); }
+
+/* RIGHTS BOX */
+.rights-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
+.right-card {
+  background: var(--off); border: 1px solid var(--border);
+  border-radius: 8px; padding: 18px;
+}
+.right-card h4 { font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+.right-card p { font-size: 13px; line-height: 1.6; color: var(--muted); margin: 0; }
+
+/* CONTACT BOX */
+.contact-box {
+  background: var(--navy); color: var(--white);
+  border-radius: 12px; padding: 32px; margin: 28px 0;
+}
+.contact-box h3 { font-family: 'Cormorant Garamond', serif; font-size: 26px; color: var(--gold); margin-bottom: 16px; }
+.contact-row { display: flex; flex-direction: column; gap: 10px; }
+.contact-item { display: flex; gap: 12px; align-items: flex-start; font-size: 14px; color: rgba(255,255,255,0.75); }
+.contact-item strong { color: var(--white); min-width: 180px; }
+
+/* HIGHLIGHT BOX */
+.highlight-box {
+  border-left: 4px solid var(--teal); background: #E0F4F7;
+  border-radius: 0 8px 8px 0; padding: 18px 22px; margin: 20px 0;
+}
+.highlight-box p { font-size: 14px; color: #1A5568; margin: 0; }
+.highlight-box strong { color: var(--navy); }
+
+/* FOOTER */
+footer {
+  background: var(--navy-d); padding: 40px 32px;
+  text-align: center; border-top: 1px solid rgba(255,255,255,0.06);
+}
+.footer-brand { font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--gold); margin-bottom: 8px; }
+.footer-links { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; }
+.footer-links a { font-size: 13px; color: rgba(255,255,255,0.5); transition: color 0.2s; }
+.footer-links a:hover { color: var(--gold); text-decoration: none; }
+.footer-copy { font-size: 12px; color: rgba(255,255,255,0.3); }
+
+@media (max-width: 640px) {
+  .policy-hero { padding: 48px 20px 40px; }
+  .policy-body { padding: 40px 20px 80px; }
+  .policy-title { font-size: 34px; }
+  .toc-grid { grid-template-columns: 1fr; }
+  .rights-grid { grid-template-columns: 1fr; }
+  .data-table { font-size: 12px; }
+  .data-table th, .data-table td { padding: 9px 10px; }
+  nav { padding: 0 20px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">CBC Learning Ecosystem</a>
+  <a href="index.html" class="nav-back">← Back to Home</a>
+</nav>
+
+<!-- HERO -->
+<div class="policy-hero">
+  <div class="policy-hero-inner">
+    <div class="policy-eyebrow">Legal</div>
+    <h1 class="policy-title">Privacy Policy</h1>
+    <div class="policy-meta">
+      <span>Last updated: March 2026</span> &nbsp;·&nbsp;
+      Effective date: March 2026 &nbsp;·&nbsp;
+      <span>Kenya Data Protection Act 2019 Compliant</span>
+    </div>
+  </div>
+</div>
+
+<!-- BODY -->
+<div class="policy-body">
+
+  <!-- Compliance banner -->
+  <div class="compliance-banner">
+    <div class="compliance-banner-icon">🇰🇪</div>
+    <div class="compliance-banner-text">
+      <h4>Kenya Data Protection Act 2019</h4>
+      <p>This Privacy Policy is written in compliance with the Kenya Data Protection Act 2019 (Act No. 24 of 2019) and the Data Protection (General) Regulations 2021. CBC Learning Ecosystem Ltd is registered as a Data Controller and Data Processor with the Office of the Data Protection Commissioner (ODPC). ODPC Registration No: <strong>[INSERT WHEN ISSUED]</strong>.</p>
+    </div>
+  </div>
+
+  <!-- TOC -->
+  <div class="toc">
+    <div class="toc-title">Contents</div>
+    <div class="toc-grid">
+      <div class="toc-item"><a href="#who-we-are">1. Who We Are</a></div>
+      <div class="toc-item"><a href="#what-we-collect">2. What Data We Collect</a></div>
+      <div class="toc-item"><a href="#why-we-collect">3. Why We Collect It</a></div>
+      <div class="toc-item"><a href="#legal-basis">4. Legal Basis for Processing</a></div>
+      <div class="toc-item"><a href="#children">5. Children's Data</a></div>
+      <div class="toc-item"><a href="#sharing">6. Who We Share Data With</a></div>
+      <div class="toc-item"><a href="#transfers">7. International Transfers</a></div>
+      <div class="toc-item"><a href="#retention">8. How Long We Keep Data</a></div>
+      <div class="toc-item"><a href="#security">9. How We Protect Your Data</a></div>
+      <div class="toc-item"><a href="#your-rights">10. Your Rights</a></div>
+      <div class="toc-item"><a href="#cookies">11. Cookies</a></div>
+      <div class="toc-item"><a href="#contact">12. Contact Us</a></div>
+    </div>
+  </div>
+
+  <!-- 1. WHO WE ARE -->
+  <div class="policy-section" id="who-we-are">
+    <h2>1. Who We Are</h2>
+    <p><strong>CBC Learning Ecosystem Ltd</strong> ("we", "us", "our") is a technology company registered in Kenya, providing a school management platform built for Kenya's Competency-Based Curriculum (CBC). Our platform serves schools, teachers, parents, and students across Kenya.</p>
+    <p>We act as both a <strong>Data Controller</strong> (we determine how and why personal data is processed) and a <strong>Data Processor</strong> (we process personal data on behalf of schools who use our platform).</p>
+    <p>Our registered address is: <strong>[YOUR REGISTERED OFFICE ADDRESS], Nairobi, Kenya</strong>.</p>
+    <p>Our Data Protection Officer can be contacted at: <a href="mailto:dpo@cbclearning.co.ke">dpo@cbclearning.co.ke</a></p>
+  </div>
+
+  <!-- 2. WHAT WE COLLECT -->
+  <div class="policy-section" id="what-we-collect">
+    <h2>2. What Data We Collect</h2>
+    <p>We collect only the data necessary to operate the platform and provide our services. The categories of data we collect depend on your role:</p>
+
+    <h3>2.1 School Administrators</h3>
+    <ul>
+      <li>Full name, email address, phone number</li>
+      <li>School name, registration number, physical address</li>
+      <li>M-Pesa Paybill shortcode and business account details</li>
+      <li>Login credentials (password stored as bcrypt hash — never in plain text)</li>
+    </ul>
+
+    <h3>2.2 Teachers</h3>
+    <ul>
+      <li>Full name, email address, phone number</li>
+      <li>TSC (Teachers Service Commission) registration number</li>
+      <li>School, class assignments, subject areas</li>
+      <li>Login credentials (bcrypt hashed)</li>
+    </ul>
+
+    <h3>2.3 Parents and Guardians</h3>
+    <ul>
+      <li>Full name, M-Pesa phone number</li>
+      <li>Relationship to student</li>
+      <li>Fee payment history (amounts, dates, M-Pesa transaction references)</li>
+      <li>SMS communication history</li>
+    </ul>
+
+    <h3>2.4 Students</h3>
+    <ul>
+      <li>Full name, NEMIS Unique Personal Identifier (UPI)</li>
+      <li>Date of birth, grade/class</li>
+      <li>CBC competency assessment records (Exceeds Expectation, Meets Expectation, Approaches Expectation, Below Expectation)</li>
+      <li>Attendance records</li>
+      <li>Fee payment status (balance, term, amounts)</li>
+    </ul>
+
+    <h3>2.5 Technical Data (all users)</h3>
+    <ul>
+      <li>IP address (held for security purposes, purged after 90 days)</li>
+      <li>Browser type and device type (for compatibility)</li>
+      <li>Session timestamps and activity logs (held for 12 months)</li>
+    </ul>
+
+    <div class="highlight-box">
+      <p><strong>We do not collect:</strong> national ID numbers (except for directors during company registration), biometric data, health records, religious beliefs, political affiliation, or any data unrelated to school management and CBC compliance.</p>
+    </div>
+  </div>
+
+  <!-- 3. WHY WE COLLECT -->
+  <div class="policy-section" id="why-we-collect">
+    <h2>3. Why We Collect It</h2>
+    <table class="data-table">
+      <tr>
+        <th>Purpose</th>
+        <th>Data Used</th>
+        <th>Who It Affects</th>
+      </tr>
+      <tr>
+        <td><strong>School fee collection</strong> — initiating M-Pesa STK Push and processing C2B Paybill payments</td>
+        <td>Parent M-Pesa phone number, payment amount, student admission number</td>
+        <td>Parents, Students</td>
+      </tr>
+      <tr>
+        <td><strong>Payment reconciliation</strong> — automatically matching M-Pesa transactions to student fee records</td>
+        <td>M-Pesa transaction ID, amount, timestamp, account reference</td>
+        <td>Parents, Students, School Admins</td>
+      </tr>
+      <tr>
+        <td><strong>CBC competency tracking</strong> — recording and reporting CBC assessment levels per student per term</td>
+        <td>Student name, NEMIS UPI, grade, competency scores</td>
+        <td>Students, Teachers, School Admins</td>
+      </tr>
+      <tr>
+        <td><strong>Parent communication</strong> — SMS receipts for payments, fee reminders, CBC progress updates</td>
+        <td>Parent phone number, student name, fee status</td>
+        <td>Parents</td>
+      </tr>
+      <tr>
+        <td><strong>Platform security</strong> — preventing fraud, detecting unauthorized access, IP whitelisting for M-Pesa callbacks</td>
+        <td>IP addresses, login timestamps, session tokens</td>
+        <td>All users</td>
+      </tr>
+      <tr>
+        <td><strong>Platform improvement</strong> — understanding how features are used to improve the product</td>
+        <td>Anonymised usage data (no personal identifiers)</td>
+        <td>All users</td>
+      </tr>
+      <tr>
+        <td><strong>Legal and tax compliance</strong> — maintaining financial records as required by Kenyan law</td>
+        <td>Transaction records, school accounts, payment history</td>
+        <td>Schools, Parents</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- 4. LEGAL BASIS -->
+  <div class="policy-section" id="legal-basis">
+    <h2>4. Legal Basis for Processing</h2>
+    <p>Under the Kenya Data Protection Act 2019 (Section 30), we must have a valid legal basis for processing personal data. We rely on the following bases:</p>
+
+    <h3>4.1 Contractual Necessity (Section 30(b))</h3>
+    <p>Most processing on our platform is necessary to perform our contract with schools. When a school subscribes to CBC Learning Ecosystem, we must process student data to deliver CBC tracking, and parent data to deliver M-Pesa fee collection. Without this processing, we cannot provide the service.</p>
+
+    <h3>4.2 Legitimate Interests (Section 30(e))</h3>
+    <p>We process some data on the basis of legitimate interests — where our interests (or those of schools) do not override the rights of data subjects. This includes: security monitoring, fraud prevention, anonymised analytics, and maintaining audit logs. We always balance these interests against the rights of individuals.</p>
+
+    <h3>4.3 Legal Obligation (Section 30(c))</h3>
+    <p>We retain financial transaction records for 7 years as required by the Kenya Revenue Authority (KRA) and the Kenya Income Tax Act. We retain M-Pesa transaction records as required under Central Bank of Kenya regulations applicable to payment service facilitators.</p>
+
+    <h3>4.4 Consent (Section 30(a))</h3>
+    <p>Where we send marketing communications or share data for purposes beyond core service delivery, we obtain explicit consent. You may withdraw consent at any time by contacting <a href="mailto:dpo@cbclearning.co.ke">dpo@cbclearning.co.ke</a>. Withdrawal does not affect data processed before withdrawal.</p>
+  </div>
+
+  <!-- 5. CHILDREN -->
+  <div class="policy-section" id="children">
+    <h2>5. Children's Data</h2>
+    <p>Our platform processes personal data of students, many of whom are children under the age of 18. We take this responsibility seriously and comply with Section 45 of the Kenya Data Protection Act 2019, which establishes heightened requirements for processing children's personal data.</p>
+
+    <h3>5.1 Lawful basis for processing children's data</h3>
+    <p>Schools are the registered Data Controllers for their students' data under Kenyan law. By enrolling a student, schools accept responsibility for the student's data on behalf of parents/guardians, operating <em>in loco parentis</em>. CBC Learning Ecosystem processes student data strictly on the school's documented instructions.</p>
+
+    <h3>5.2 What we do with children's data</h3>
+    <ul>
+      <li>We process student data <strong>only</strong> for school management purposes: CBC assessments, fee tracking, attendance, and MoE-mandated reporting.</li>
+      <li>We do <strong>not</strong> use children's data for advertising, profiling, or any commercial purpose beyond the school management service.</li>
+      <li>We do <strong>not</strong> share children's data with third parties except those listed in Section 6 of this policy.</li>
+      <li>We do <strong>not</strong> retain children's data beyond the retention periods specified in Section 8.</li>
+    </ul>
+
+    <h3>5.3 Parental access</h3>
+    <p>Parents and guardians may request access to their child's data, request corrections, or request deletion by contacting <a href="mailto:dpo@cbclearning.co.ke">dpo@cbclearning.co.ke</a>. Requests will be fulfilled within 21 days, subject to the school's verification of parental relationship.</p>
+  </div>
+
+  <!-- 6. SHARING -->
+  <div class="policy-section" id="sharing">
+    <h2>6. Who We Share Data With</h2>
+    <p>We do not sell personal data. We do not share personal data with advertisers. We share data only with the following third-party service providers, strictly for platform operation:</p>
+
+    <table class="data-table">
+      <tr>
+        <th>Third Party</th>
+        <th>Purpose</th>
+        <th>Data Shared</th>
+        <th>Their Privacy Policy</th>
+      </tr>
+      <tr>
+        <td><strong>Safaricom M-Pesa</strong></td>
+        <td>Processing M-Pesa STK Push and C2B Paybill school fee payments</td>
+        <td>Parent M-Pesa phone number, payment amount, account reference (student number)</td>
+        <td><a href="https://www.safaricom.co.ke/personal/m-pesa/getting-started/privacy-policy" target="_blank">Safaricom Privacy Policy</a></td>
+      </tr>
+      <tr>
+        <td><strong>Africa's Talking</strong></td>
+        <td>Sending SMS payment receipts and fee reminders to parents</td>
+        <td>Parent phone number, message content (payment receipt or reminder)</td>
+        <td><a href="https://africastalking.com/privacy" target="_blank">Africa's Talking Privacy</a></td>
+      </tr>
+      <tr>
+        <td><strong>Neon (PostgreSQL hosting)</strong></td>
+        <td>Hosting the platform's database in the AWS Africa (Cape Town) region</td>
+        <td>All platform data (stored encrypted at rest, AES-256)</td>
+        <td><a href="https://neon.tech/privacy" target="_blank">Neon Privacy Policy</a></td>
+      </tr>
+      <tr>
+        <td><strong>Railway</strong></td>
+        <td>Hosting the platform's backend application server</td>
+        <td>Application logs, environment variables (no raw personal data stored on Railway)</td>
+        <td><a href="https://railway.app/legal/privacy" target="_blank">Railway Privacy Policy</a></td>
+      </tr>
+    </table>
+
+    <p>We may also disclose personal data to law enforcement agencies, courts, or government regulators when required by Kenyan law or a valid court order.</p>
+  </div>
+
+  <!-- 7. TRANSFERS -->
+  <div class="policy-section" id="transfers">
+    <h2>7. International Data Transfers</h2>
+    <p>We are committed to keeping Kenyan personal data in Africa. Our data storage architecture:</p>
+    <ul>
+      <li><strong>Database:</strong> Hosted on Neon in the <strong>AWS Africa (Cape Town, South Africa)</strong> region. No data leaves Africa.</li>
+      <li><strong>Application server:</strong> Hosted on Railway. Application processing occurs in a region geographically close to Kenya. No personal data is stored on Railway infrastructure — it is transmitted to the database.</li>
+      <li><strong>SMS:</strong> Africa's Talking processes SMS delivery within their Africa-based infrastructure.</li>
+    </ul>
+    <p>We do not transfer personal data to countries outside Africa without your explicit consent or a valid legal basis under Section 48 of the Kenya Data Protection Act 2019.</p>
+  </div>
+
+  <!-- 8. RETENTION -->
+  <div class="policy-section" id="retention">
+    <h2>8. How Long We Keep Your Data</h2>
+
+    <table class="data-table">
+      <tr>
+        <th>Data Category</th>
+        <th>Retention Period</th>
+        <th>Reason</th>
+      </tr>
+      <tr>
+        <td>M-Pesa payment transaction records</td>
+        <td>7 years from transaction date</td>
+        <td>KRA tax compliance requirement</td>
+      </tr>
+      <tr>
+        <td>Student CBC assessment records</td>
+        <td>Duration of school subscription + 1 year, then anonymised</td>
+        <td>MoE reporting requirements; parental right to historical records</td>
+      </tr>
+      <tr>
+        <td>Parent contact details (phone, name)</td>
+        <td>Duration of school subscription + 30 days after account deletion request</td>
+        <td>Contractual necessity</td>
+      </tr>
+      <tr>
+        <td>Teacher account data</td>
+        <td>Duration of employment + 30 days after account deletion request</td>
+        <td>Contractual necessity</td>
+      </tr>
+      <tr>
+        <td>School administrator account data</td>
+        <td>Duration of subscription + 90 days (to allow reactivation)</td>
+        <td>Contractual necessity and reactivation support</td>
+      </tr>
+      <tr>
+        <td>Security and audit logs (IP addresses, login times)</td>
+        <td>12 months</td>
+        <td>Security and fraud prevention</td>
+      </tr>
+      <tr>
+        <td>SMS delivery logs</td>
+        <td>90 days</td>
+        <td>Delivery confirmation and dispute resolution</td>
+      </tr>
+    </table>
+
+    <p>When data reaches the end of its retention period, we either permanently delete it or anonymise it (removing all personal identifiers) so it can no longer be linked to an individual.</p>
+  </div>
+
+  <!-- 9. SECURITY -->
+  <div class="policy-section" id="security">
+    <h2>9. How We Protect Your Data</h2>
+    <p>We implement appropriate technical and organisational measures to protect personal data against unauthorised access, loss, or destruction:</p>
+
+    <h3>Technical measures</h3>
+    <ul>
+      <li><strong>Encryption in transit:</strong> All data transmitted between your device and our servers is encrypted using TLS 1.3. HTTPS is enforced on all endpoints.</li>
+      <li><strong>Encryption at rest:</strong> Our database is hosted on Neon (SOC 2 Type II certified) with AES-256 encryption at the storage layer.</li>
+      <li><strong>Authentication:</strong> JWT-based authentication with 15-minute access token expiry and 7-day refresh token rotation. Passwords are hashed with bcrypt (never stored in plain text).</li>
+      <li><strong>Access control:</strong> Role-based access ensures teachers can only see their own classes, and parents can only see their own children's data.</li>
+      <li><strong>M-Pesa callback security:</strong> Our callback endpoints only accept connections from Safaricom's published IP ranges (196.201.214.0/24 and 196.201.216.0/24).</li>
+      <li><strong>Audit logging:</strong> Every data access and modification is logged with timestamp, user ID, and IP address.</li>
+    </ul>
+
+    <h3>Organisational measures</h3>
+    <ul>
+      <li>Access to production systems is restricted to authorised personnel only.</li>
+      <li>Staff handling personal data are trained on data protection obligations.</li>
+      <li>We conduct security reviews before deploying new features that process personal data.</li>
+    </ul>
+
+    <h3>Data breach notification</h3>
+    <p>In the event of a data breach that poses a risk to individuals' rights and freedoms, we will notify the ODPC within 72 hours of becoming aware, as required by Section 43 of the Kenya Data Protection Act 2019. We will notify affected individuals without undue delay where the breach poses a high risk to them.</p>
+    <p>To report a suspected security vulnerability or data breach, contact: <a href="mailto:dpo@cbclearning.co.ke">dpo@cbclearning.co.ke</a></p>
+  </div>
+
+  <!-- 10. YOUR RIGHTS -->
+  <div class="policy-section" id="your-rights">
+    <h2>10. Your Rights</h2>
+    <p>Under the Kenya Data Protection Act 2019 (Sections 26–34), you have the following rights regarding your personal data:</p>
+
+    <div class="rights-grid">
+      <div class="right-card">
+        <h4>👁️ Right of Access</h4>
+        <p>You have the right to obtain a copy of all personal data we hold about you, free of charge. We will provide this in CSV format within 14 days of a verified request.</p>
+      </div>
+      <div class="right-card">
+        <h4>✏️ Right to Rectification</h4>
+        <p>If any data we hold is inaccurate or incomplete, you have the right to have it corrected. We will action corrections within 5 business days of verification.</p>
+      </div>
+      <div class="right-card">
+        <h4>🗑️ Right to Erasure</h4>
+        <p>You have the right to request deletion of your personal data. Where we have a legal obligation to retain data (e.g. financial records), we will anonymise rather than delete.</p>
+      </div>
+      <div class="right-card">
+        <h4>📦 Right to Data Portability</h4>
+        <p>You can request your data in a portable, machine-readable format (JSON or CSV). Student CBC records are exportable at the school's request at any time.</p>
+      </div>
+      <div class="right-card">
+        <h4>🚫 Right to Object</h4>
+        <p>Where we process data on the basis of legitimate interests, you may object. We will cease processing unless we can demonstrate compelling legitimate grounds.</p>
+      </div>
+      <div class="right-card">
+        <h4>🔒 Right to Restrict Processing</h4>
+        <p>You may request that we restrict processing of your data while a complaint is being investigated or while you are exercising another right.</p>
+      </div>
+    </div>
+
+    <h3>How to exercise your rights</h3>
+    <p>Submit a data subject access request to: <a href="mailto:dpo@cbclearning.co.ke">dpo@cbclearning.co.ke</a></p>
+    <p>We will acknowledge all requests within 3 business days and fulfil them within 21 days as required by the Act. We may need to verify your identity before processing the request.</p>
+
+    <h3>Right to complain</h3>
+    <p>If you believe we have handled your personal data unlawfully, you have the right to lodge a complaint with the Office of the Data Protection Commissioner (ODPC):</p>
+    <ul>
+      <li>Website: <a href="https://www.odpc.go.ke" target="_blank">www.odpc.go.ke</a></li>
+      <li>Email: <a href="mailto:info@odpc.go.ke">info@odpc.go.ke</a></li>
+      <li>Phone: +254 709 217 000</li>
+    </ul>
+  </div>
+
+  <!-- 11. COOKIES -->
+  <div class="policy-section" id="cookies">
+    <h2>11. Cookies and Local Storage</h2>
+    <p>Our platform uses a minimal set of browser storage mechanisms, all strictly necessary for platform operation:</p>
+
+    <table class="data-table">
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Purpose</th>
+        <th>Duration</th>
+      </tr>
+      <tr>
+        <td><code>cbc_access_token</code></td>
+        <td>HTTP-only cookie</td>
+        <td>Stores your authenticated session JWT token</td>
+        <td>15 minutes</td>
+      </tr>
+      <tr>
+        <td><code>cbc_refresh_token</code></td>
+        <td>HTTP-only cookie</td>
+        <td>Allows automatic session renewal without re-login</td>
+        <td>7 days</td>
+      </tr>
+      <tr>
+        <td>IndexedDB (offline cache)</td>
+        <td>Browser local storage</td>
+        <td>Caches CBC forms and offline work queue for offline-first functionality</td>
+        <td>Session (cleared on logout)</td>
+      </tr>
+    </table>
+
+    <p>We do not use advertising cookies, tracking pixels, or third-party analytics cookies. We do not use Google Analytics or any similar tracking service.</p>
+    <p>You can clear cookies and local storage at any time through your browser settings. Note that clearing session cookies will log you out of the platform.</p>
+  </div>
+
+  <!-- 12. CONTACT -->
+  <div class="policy-section" id="contact">
+    <h2>12. Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, wish to exercise your data rights, or need to report a concern, please contact us:</p>
+
+    <div class="contact-box">
+      <h3>Data Protection Contact</h3>
+      <div class="contact-row">
+        <div class="contact-item">
+          <strong>Data Protection Officer:</strong>
+          [YOUR NAME], Founder & DPO
+        </div>
+        <div class="contact-item">
+          <strong>DPO Email:</strong>
+          <a href="mailto:dpo@cbclearning.co.ke" style="color:var(--gold)">dpo@cbclearning.co.ke</a>
+        </div>
+        <div class="contact-item">
+          <strong>General Enquiries:</strong>
+          <a href="mailto:invest@cbclearning.co.ke" style="color:var(--gold)">invest@cbclearning.co.ke</a>
+        </div>
+        <div class="contact-item">
+          <strong>Registered Address:</strong>
+          [YOUR REGISTERED OFFICE ADDRESS], Nairobi, Kenya
+        </div>
+        <div class="contact-item">
+          <strong>ODPC Registration No.:</strong>
+          [INSERT WHEN ISSUED — expected April 2026]
+        </div>
+        <div class="contact-item">
+          <strong>Response time:</strong>
+          We acknowledge all data subject requests within 3 business days and fulfil them within 21 days.
+        </div>
+      </div>
+    </div>
+
+    <h3>Changes to This Policy</h3>
+    <p>We may update this Privacy Policy from time to time to reflect changes in our practices or in applicable law. We will notify registered users by email when we make material changes. The "Last updated" date at the top of this page reflects the most recent revision.</p>
+    <p>Continued use of the platform after changes are posted constitutes your acceptance of the updated policy.</p>
+
+    <h3>Language</h3>
+    <p>This Privacy Policy is written in English. In the event of any conflict between an English version and a translated version, the English version shall prevail.</p>
+  </div>
+
+</div><!-- /policy-body -->
+
+<footer>
+  <div class="footer-brand">CBC Learning Ecosystem</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="index.html#solution">Platform</a>
+    <a href="index.html#pricing">Pricing</a>
+    <a href="index.html#investor">Investors</a>
+    <a href="mailto:dpo@cbclearning.co.ke">Data Protection</a>
+  </div>
+  <div class="footer-copy">© 2026 CBC Learning Ecosystem Ltd · Nairobi, Kenya · ODPC Registration: [In Progress] · <a href="privacy.html" style="color:rgba(255,255,255,0.4)">Privacy Policy</a></div>
+</footer>
+
+</body>
+</html>
